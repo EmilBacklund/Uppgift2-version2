@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <div class="nav">
+        <img class="logo" src="/images/logo.png" alt="logo" />
+        <label for="hamburger-menu"
+          ><span class="screenreader-only">Hamburger Menu</span>
+          <i class="fas fa-bars"></i
+        ></label>
+        <input id="hamburger-menu" type="checkbox" />
+        <ul class="dropdown">
+          <li class="nav-header"><a href="/">Animals</a></li>
+          <li class="nav-header"><a href="/">Environment</a></li>
+          <li class="nav-header"><a href="/">History & Culture</a></li>
+          <li class="nav-header"><a href="/">Science</a></li>
+          <li class="nav-header"><a href="/">Travel</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="container hero-banner bg-jelly">
+      <div class="tagline">
+        <h1>The graceful Jellyfish</h1>
+        <p>not edible, but beautiful all the same.</p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="flex-items">
+        <div class="item-centered" id="dog">
+          <img class="images" src="/images/dog.jpg" alt="Dog running" />
+          <h2 class="small-picture-text">
+            Dogs love <span class="thin">the ocean</span>
+          </h2>
+        </div>
+        <div class="item-centered" id="lizard">
+          <img 
+            class="images"
+            src="/images/lizzard.jpg"
+            alt="lizard in jungle"
+          />
+          <h2 class="small-picture-text">
+            Lizzards <span class="thin">and gizzards</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="flex-items">
+          <div class="text-align">
+            <h3>National Geographic</h3>
+            <ul class="padding">
+              <div class="footer-text">
+                <li>ANIMALS</li>
+                <li>ENVIRONMENT</li>
+                <li>HISTORY & CULTURE</li>
+                <li>SCIENCE</li>
+                <li>TRAVEL</li>
+              </div>
+            </ul>
+          </div>
+          <div class="text-align hide">
+            <h3>Connect with us</h3>
+            <ul class="padding">
+              <div class="footer-text">
+                <li>The Magazine</li>
+                <li>YouTube</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+              </div>
+            </ul>
+          </div>
+          <div class="text-align hide">
+            <h3>Legal</h3>
+            <p>
+              Copyright © 1996-2015 National Geographic <br />
+              <br />
+              SocietyCopyright © 2015-2021 National <br />
+              Geographic Partners, LLC. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

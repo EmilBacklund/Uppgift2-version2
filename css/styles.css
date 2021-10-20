@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 987px;
+    margin: 0 auto;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  header {
+    height: 48px;
+    border: 2px solid #ffd520;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    max-width: 89px;
+    max-height: 26px;
+    margin: 10px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* https://stackoverflow.com/questions/10272605/align-two-inline-blocks-left-and-right-on-same-line?rq=1
+  fix the nav with the link ^ */
+  
+  .nav-header {
+    display: block;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #444444;
+    font-family: 'Open Sans';
+    font-weight: 400;
+  }
+  
+  /*  */
+  
+  label[for='hamburger-menu'] {
+    z-index: 11;
+    padding: 15px;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    right:1px;
+    z-index: 10;
+    opacity: 0;
+    display: block;
+    background: white;
+    list-style: none;
+    border: none;
+    transition: all 0.2s linear;
+    transform: translateY(52px);
+    box-shadow: 0px 12px 20px 5px rgb(231 224 8 / 80%);
+  }
+  
+.dropdown li {
+    margin-left: 20px;
+}
+
+  .screenreader-only {
+    display: none;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+  
+  #hamburger-menu:checked ~ .dropdown {
+    /* show nav */
+    display: block;
+    transform: translateY(52px);
+    opacity: 1;
+  }
+  
+  /*  */
+  
+  .hero-banner {
+    height: 420px;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  
+  #jellyfish {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tagline {
+    color: white;
+    font-family: 'ubuntu';
+    position: absolute;
+    height: 67px;
+    bottom: 68px;
+    left: 40px;
+  }
+  
+  .bg-jelly {
+    background-image: url(../images/jellyfish.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+  }
+  
+  .tagline h1 {
+    font-size: 34px;
+  }
+  
+  .tagline p {
+    font-size: 22px;
+    font-weight: lighter;
+  }
+  
+  .flex-items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #dog {
+    min-height: 640px;
+}
+  
+  .item-centered {
+    height: 220px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .small-picture-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'ubuntu';
+    font-size: 32px;
+  }
+  
+  .thin {
+    font-weight: 100;
+  }
+  
+  footer {
+    background-color: #444444;
+    height: 220px;
+  }
+  
+  .text-align {
+    width: 315px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'open sans';
+    color: #d9d9d9;
+    margin-left: 10px;
+  }
+  
+  .padding {
+    padding-inline-start: 0;
+  }
+  
+  .footer-text {
+    color: #d9d9d9;
+    font-family: 'open sans';
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 10px;
+  }
+  
+  p {
+    color: #d9d9d9;
+    font-size: 14px;
+    font-family: 'open sans';
+  }
+  
+  @media screen and (min-width: 984px) {
+    .hide {
+      display: initial;
+    }
+  
+    header {
+      height: 48px;
+      border: 2px solid #ffd520;
+    }
+  
+    .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .bg-jelly {
+      background-image: url(../images/jellyfish.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 -510px;
+    }
+  
+    /*  */
+  
+    label {
+      display: none;
+    }
+  
+    .dropdown {
+      /* hide nav on load */
+      /* animate: default state on page load */
+      /* transform: translateY is from top.
+      translateX is from the side */
+      /*transform: translateY(-200px);*/
+      position: relative;
+      top: auto;
+      transform: translateY(0);
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      opacity: 1;
+      width: fit-content;
+      transition: 0s;
+    }
+  
+    .dropdown li {
+      display: inline-block;
+    }
+  
+    #hamburger-menu:checked ~ .dropdown {
+        /* show nav */
+        transform: translateY(0px);
+      }
+
+    /*  */
+  
+    .logo {
+      max-width: 89px;
+      max-height: 26px;
+      margin: 10px;
+    }
+  
+    ul {
+      list-style: none;
+    }
+  
+    .nav-header {
+      display: inline-block;
+      margin-top: 15px;
+      margin-right: 15px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #444444;
+      font-family: 'Open Sans';
+      font-weight: 400;
+    }
+  
+    .hero-banner {
+      height: 420px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+  
+    .relative {
+      color: white;
+      font-family: 'ubuntu';
+      position: absolute;
+      width: 700px;
+      height: 67px;
+      bottom: 68px;
+      left: 40px;
+    }
+  
+    .relative h1 {
+      font-size: 36px;
+    }
+  
+    .relative p {
+      font-size: 24px;
+      font-weight: lighter;
+    }
+  
+    .flex-items {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  
+    .item-centered {
+      width: 315px;
+      height: 220px;
+      position: relative;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #dog {
+        flex-grow: 2;
+        margin-right: 20px;
+        min-height: 100%;
+    }
+  
+    .images {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .small-picture-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'ubuntu';
+      font-size: 32px;
+    }
+  
+    .thin {
+      font-weight: 100;
+    }
+  
+    footer {
+      background-color: #444444;
+      height: 220px;
+    }
+  
+    .text-align {
+      width: 315px;
+    }
+  
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-family: 'open sans';
+      color: #d9d9d9;
+      margin-left: 0px;
+    }
+  
+    .padding {
+      padding-inline-start: 0;
+    }
+  
+    .footer-text {
+      color: #d9d9d9;
+      font-family: 'open sans';
+      font-size: 14px;
+      line-height: 24px;
+      margin-left: 0px;
+    }
+  
+    p {
+      color: #d9d9d9;
+      font-size: 14px;
+      font-family: 'open sans';
+    }
+  }
+  
